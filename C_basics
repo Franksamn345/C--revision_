@@ -11,4 +11,10 @@
 * eg "int, char, float."
 * Anytime u are declaring a variable u should assin a type to show the type of data to be expected.
 * A semicolon is used to end a line, but not used on a function declaration ";"
+##### Variable initialization
+* eg ..."int samn;" this is variable declaration
+* eg ..."samn = 12;" the variable **samn** has been innitialized to value "12"
+* The "\n" means that the compiler should print a new line at the end of the code
+###### To print the value to the output screen
+* We use the "printf()" function to print the values inputed to the output screen
 
