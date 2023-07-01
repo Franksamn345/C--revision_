@@ -17,4 +17,3 @@
 * The "\n" means that the compiler should print a new line at the end of the code
 ###### To print the value to the output screen
 * We use the "printf()" function to print the values inputed to the output screen
-
