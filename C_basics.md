@@ -36,3 +36,22 @@ By passing "&score", "scanf" knows where to store the inputted value. Without th
 * when using switch the range of numbers is written as "70 ... 80"
 * **Example are in the repo**
 * when using the "switch" we are supposed to "break" after every condition to avoid the code from printing the rest from where the condition is met 
+#### loops (for, while, do while)
+* We use loops when we want a condition to go on until the condition is met else it should continue
+* A loop counts the number of times the conddition shoud be repeated 
+* That is why we should declare a variable for the loop which acts as a count
+# In a loop there are three most important things that should be placed
+1. There should be a starting value eg "variable age"
+2. The second thing is the condition and this determines whether the loop will continue
+3. Increment and decrement, for the loop to either increase the value or decrease it.
+* The condition is stopped when the condition is met
+##### (for, while loop)
+* condition x < 10;
+* initializing value x = x + 1; 
+* Increment x++
+1. for (x = 1; x <= 10; x++)
+2. {
+3.     /** line of code\n*\
+4. }
+* That is the basic structure of a for or while loop
+
