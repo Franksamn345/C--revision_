@@ -31,3 +31,7 @@
 In this case, the line scanf("%d", &score); is used to read an integer input from the user and store it in the variable "score". The ampersand (&) is used to get the address of the variable "score" so that **scanf** can modify its value directly.
 
 By passing "&score", "scanf" knows where to store the inputted value. Without the ampersand, **scanf** wouldn't know the address of "score" and wouldn't be able to modify its value.
+#### The "switch statement"
+* This is also a condition statement
+* when using switch the range of numbers is written as "70..80"
+* **Example are in the repo** 
