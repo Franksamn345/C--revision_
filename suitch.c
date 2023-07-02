@@ -23,22 +23,22 @@ int main(void)
 	 */
 	switch (score)
 	{
-		case 80:
+		case 80 ... 100:
 			printf("Your grade is A");
 			break;
-		case 70:
+		case 70 ... 79:
 			printf("Your grade is A-");
 			break;
-		case 65:
+		case 65 ... 69:
 			printf("Your grade is B+");
 			break;
-		case 60:
+		case 60 ... 64:
 			printf("Your grade is B");
 			break;
-		case 50:
+		case 50 ... 59:
 			printf("Your grade is B-");
 			break;
-		case 40:
+		case 40 ... 49:
 			printf("Your grade is C+");
 			break;
 		default:
