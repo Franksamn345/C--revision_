@@ -24,6 +24,10 @@
 #AND This means that both conditions are supposed to be true for the condition to work
 #OR This means that either of the two conditions are supossed to be true for the condition to work
 ###### To make the code ask for the user input :
-* We use the "scanf()" function. An ampers sign is passed "&", for example: 
-**scanf("%d", &score);**
+* We use the "scanf()" function. An ampersand sign is passed "&", for example: 
+**scanf("%d", &score);**, the ampersand (&) sign is used in the scanf function to pass the address of the variable score as an argument.
+* The scanf function is used to read input from the user. It takes two arguments: the format specifier indicating the type of input expected, and the address of the variable where the input should be stored.
 
+In this case, the line scanf("%d", &score); is used to read an integer input from the user and store it in the variable "score". The ampersand (&) is used to get the address of the variable "score" so that **scanf** can modify its value directly.
+
+By passing "&score", "scanf" knows where to store the inputted value. Without the ampersand, **scanf** wouldn't know the address of "score" and wouldn't be able to modify its value.
