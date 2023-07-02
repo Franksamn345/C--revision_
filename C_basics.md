@@ -23,4 +23,7 @@
 * logical operator "AND &&", "OR ||"
 #AND This means that both conditions are supposed to be true for the condition to work
 #OR This means that either of the two conditions are supossed to be true for the condition to work
-#
+###### To make the code ask for the user input :
+* We use the "scanf()" function. An ampers sign is passed "&", for example: 
+**scanf("%d", &score);**
+
