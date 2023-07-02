@@ -14,7 +14,10 @@
 int main(void)
 
 {
-	int score = 30;
+	int score;
+
+	printf("Type in your score: \n");
+	scanf("%d", &score);
 
         /** Check if the score is between 
 	 * 80 and 100 print the grade if true
