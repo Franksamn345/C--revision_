@@ -17,3 +17,10 @@
 * The "\n" means that the compiler should print a new line at the end of the code
 ###### To print the value to the output screen
 * We use the "printf()" function to print the values inputed to the output screen
+####### Conditionals and loops "(if, switch)"
+* "if statement"- we use it in desicion making:
+* example a grading  system of a school
+* logical operator "AND &&", "OR ||"
+#AND This means that both conditions are supposed to be true for the condition to work
+#OR This means that either of the two conditions are supossed to be true for the condition to work
+#
