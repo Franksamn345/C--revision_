@@ -49,9 +49,17 @@ By passing "&score", "scanf" knows where to store the inputted value. Without th
 * condition x < 10;
 * initializing value x = x + 1; 
 * Increment x++
-1. for (x = 1; x <= 10; x++)
+##### for (x = 1; x <= 10; x++)
 2. {
 3.     /** line of code\n*\
 4. }
-* That is the basic structure of a for or while loop
+* That is the basic structure of a for loop
+##### While
+1. initialize
+2. while (condition)
+3. {
+4.     /* Increment/Decrement
+5. }
+* That is the basic structer of a while loop
+* for a while loop to work u must have initialize a value
 
