@@ -62,4 +62,32 @@ By passing "&score", "scanf" knows where to store the inputted value. Without th
 5. }
 * That is the basic structer of a while loop
 * for a while loop to work u must have initialize a value
+###### Recursion
+* Recursion is the repeat of a process before it comes to its completion 
+* The function calls itself
+#### Functions
+* This are action words for performing a certain function
+* Predefined functions are the ones that are already programmed in the computer and the computer understands it as long as it sees it
+* Defining a function is to write what the function entails
+* Declaring a function is to wrie a declaration of the function, and it is done at the top"writing the prototype of the function so it can be used in other functions
+
+ 
+1. Defination :
+              *(Recursive "when the function is called in the definition ")
+2. Declaration
+3. Calling of the function
+i) Example
+* The "rm -r"- recursion function for deleting files:  "rm -r"
+* {
+* 	conditoin()
+*		{
+*			if it is a directory/file
+*					{
+*						if file or directory is empty
+*					}
+*	Terminating_condition(This is the "Base case")
+* }
+
+##### How to call a function
+1. First define the function
 
