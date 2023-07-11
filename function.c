@@ -1,5 +1,5 @@
 #include <stdio.h>
-int sum(int one, int two);//Function declaration
+int sum(int one, int two);//Function declaration//prototype
 
 int sum(int one, int two)//Function definition
 {

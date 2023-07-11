@@ -62,15 +62,52 @@ By passing "&score", "scanf" knows where to store the inputted value. Without th
 5. }
 * That is the basic structer of a while loop
 * for a while loop to work u must have initialize a value
-###### Recursion
+### Recursion
 * Recursion is the repeat of a process before it comes to its completion 
 * The function calls itself
+#### Types of Recursion
+1. Direct recursion
+2. Indirect recursion
+3. Tail recursion
+4. Non-tail recursion
+##### 1. Direct recursion
+* A function is called direct recursive if it calls the same function again
+###### Structures of Direct recursion:
+1. func() {
+2.	//some code
+3. 	fun();
+4.	//some code
+5. }
+##### 2. Indirect recursion
+* A function(let say "func" is called indirect recursive if it calls another function(let say "func2") and then "func2" calls "func" directly or indirectly
+###### Structures of Indirect recursion:
+1. fun() {                    1. fun2() {
+2. 	//some code           2. 	//some code    
+3. fun();                     3. fun();
+4. 	//some code           4. 	//some code
+5. }                          5. }
+##### Idea behind it 
+1. Divide te problem into smaller sub-problems.
+2. Specify the base condition to stop the recursion to prevent an "infinite loop"
+* Example of use of recursion:
+* Factorial of 5: 5 * 4 * 3 * 2 * 1 = 120;
+##### The basic structure of a recursion program
+1. Fact()
+2. {
+3. 	if( )
+4. 	{
+5. 		....} Base case.(2)-"Base condition is the one which doesn't require to call the same function again and it helps in stopping the recursion.like the smallest possible problemi
+6. 	}
+7. 	else
+8. 	{
+9. 		....} Recursive procedure.(1)
+10. 	}
+11. }
 #### Functions
 * This are action words for performing a certain function
 * Predefined functions are the ones that are already programmed in the computer and the computer understands it as long as it sees it
 * Defining a function is to write what the function entails
 * Declaring a function is to wrie a declaration of the function, and it is done at the top"writing the prototype of the function so it can be used in other functions
-
  
 1. Defination :
               *(Recursive "when the function is called in the definition ")
@@ -87,7 +124,19 @@ i) Example
 *					}
 *	Terminating_condition(This is the "Base case")
 * }
-
+##### Header files
+* They contain prototypes used to call certain functions to be used in a code.
+* The prototypes are the function declarations held by the header file which are introduced to the peice of code by including a "header file"
 ##### How to call a function
-1. First define the function
-
+1. First define the function and what the code of the function is about
+2. Second declare the prototype mostly at the top of the code after the header files, so that it can be reused in other functions without repeating the declaration
+3. declare a variable in the required function and assign it the function call.. eg. "int x = sum(78, 90);"
+##### Pointers
+* 
+##### Dynamic memory allocation
+1. Functions that allocat are:
+            /*malloc, calloc, realloc*/
+2. Function that deallocates memory
+            /*free*/
+##### malloc)
+* void* malloc(sizeof(size)); 
