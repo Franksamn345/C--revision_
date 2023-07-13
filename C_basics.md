@@ -132,7 +132,18 @@ i) Example
 2. Second declare the prototype mostly at the top of the code after the header files, so that it can be reused in other functions without repeating the declaration
 3. declare a variable in the required function and assign it the function call.. eg. "int x = sum(78, 90);"
 ##### Pointers
-* 
+* Incremetion when the "++"sign comes before the variable "pre-decrement" then 1 is added to the variable, and the value of the variable is changed. 
+. Example:
+1. /**
+2.  * int sam = 5;
+3.  * int so = ++sam;//By placing increment sign before the variebles, the value of "sam" is changed as 1 is added to it.
+4.  */
+. Example 2:
+1. /**
+2.  * int sam = 5;
+3.  * int so = sam++;//By placing increment sign after the variable, the value of sam still remains the same as in this the "=" operator is first executed then followed with the increment.
+4.  */
+
 ##### Dynamic memory allocation
 1. Functions that allocat are:
             /*malloc, calloc, realloc*/
