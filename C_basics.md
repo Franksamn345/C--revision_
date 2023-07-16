@@ -131,62 +131,62 @@ i) Example
 ###  <string.h>
 1. strcpy: Copies one string to another.
 
-* /* char *strcpy(char *dest, const char *src); */
+* { /* char *strcpy(char *dest, const char *src); */}
 * Use: This function is used to copy the contents of the source string (src) to the destination string (dest).
 
 2. strcat: Concatenates two strings.
 
-* /* char *strcat(char *dest, const char *src); */
+* { /* char *strcat(char *dest, const char *src); */ }
 * Use: It appends the contents of the source string (src) to the destination string (dest), resulting in a single concatenated string.
 
 3. strlen: Calculates the length of a string.
 
-* /* size_t strlen(const char *str);*/
+* { /* size_t strlen(const char *str);*/ }
 * Use: This function returns the length of the string (str), excluding the null terminator.
 
 4. strcmp: Compares two strings.
 
-* /* int strcmp(const char *str1, const char *str2); */
+* { /* int strcmp(const char *str1, const char *str2); */ }
 * Use: It compares the two strings (str1 and str2) and returns an integer value indicating their relationship (equal, greater than, or less than).
 
 5. strncmp: Compares the first n characters of two strings.
 
-* /* int strncmp(const char *str1, const char *str2, size_t n); */
+* { /* int strncmp(const char *str1, const char *str2, size_t n); */ }
 Use: Similar to strcmp, but it compares only the first n characters of the strings.
 
 6. strstr: Finds the first occurrence of a substring in a string.
 
-* /* char *strstr(const char *str1, const char *str2); */
+* { /* char *strstr(const char *str1, const char *str2); */ }
 * Use: It searches for the first occurrence of str2 within str1 and returns a pointer to the first character of the found substring, or NULL if not found.
 
 7. strtok: Tokenizes a string based on delimiters.
 
-* /*char *strtok(char *str, const char *delim); */
+ { /* char *strtok(char *str, const char *delim); */ }
 * Use: It breaks the input string (str) into a series of tokens based on the provided delimiters (delim), returning each token one at a time.
 
 8. memcpy: Copies a block of memory.
 
-/* void *memcpy(void *dest, const void *src, size_t n); */
+{ /* void *memcpy(void *dest, const void *src, size_t n); */ }
 * Use: This function copies n bytes of memory from the source address (src) to the destination address (dest).
 ### <stdio.h> header file in C provides functions for input and output operations. Here are some commonly used functions and their uses:
 1. printf: Prints formatted output to the standard output stream.
 
-* /* int printf(const char *format, ...); */
+ { /* int printf(const char *format, ...); */ }
 * Use: It formats and prints the specified arguments (...) based on the provided format string (format) to the standard output.
 
 2. scanf: Reads formatted input from the standard input stream.
 
-* /*int scanf(const char *format, ...); */
+ { /*int scanf(const char *format, ...); */ }
 * Use: It reads input from the standard input based on the specified format string (format) and stores the values in the provided arguments (...).
 
 3. fgets: Reads a line of text from a file or input stream.
 
-* /* char *fgets(char *str, int n, FILE *stream); */
+ { /* char *fgets(char *str, int n, FILE *stream); */ }
 * Use: It reads at most n-1 characters from the specified input stream (stream) and stores them in the string (str). It stops reading after encountering a newline or the end of the file.
 
 4. fopen: Opens a file.
 
-* /* FILE *fopen(const char *filename, const char *mode); */
+  { /* FILE *fopen(const char *filename, const char *mode); */ }
 * Use: It opens a file with the specified filename in the specified mode (e.g., "r" for read, "w" for write) and returns a file pointer (FILE*) that can be used for further file operations.
 
 5. fclose: Closes a file.
