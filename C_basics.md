@@ -406,15 +406,19 @@ Use: Similar to strcmp, but it compares only the first n characters of the strin
 ##### Pointers
 * Incremetion when the "++"sign comes before the variable "pre-decrement" then 1 is added to the variable, and the value of the variable is changed. 
 . Example:
-1. /**
-2.  * int sam = 5;
-3.  * int so = ++sam;//By placing increment sign before the variebles, the value of "sam" is changed as 1 is added to it.
-4.  */
+1. {
+2. 	/**
+3. 		int sam = 5;
+4. 		int so = ++sam;//By placing increment sign before the variebles, the value of "sam" is changed as 1 is added to it.
+5.  	*/
+6. }
 . Example 2:
-1. /**
-2.  * int sam = 5;
-3.  * int so = sam++;//By placing increment sign after the variable, the value of sam still remains the same as in this the "=" operator is first executed then followed with the increment.
-4.  */
+1. {
+2. 	/**
+3. 		int sam = 5;
+4. 		int so = sam++;//By placing increment sign after the variable, the value of sam still remains the same as in this the "=" operator is first executed then followed with the increment.
+5.  	*/
+6. }
 
 ##### Dynamic memory allocation
 1. Functions that allocat are:
