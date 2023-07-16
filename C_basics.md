@@ -438,10 +438,11 @@ If the `free()` function succeeds, it does nothing. If the `free()` function fai
 ** Examples **
 1. {
 2. 	// Allocate a block of memory of size 10 bytes.
-3. 	char *ptr = malloc(10);
+3. 		char *ptr = malloc(10);
 4. 	// Change the size of the memory block to 20 bytes.
-5. 	ptr = realloc(ptr, 20);
+5. 		ptr = realloc(ptr, 20);
 6. 	// Allocate a block of memory and initialize all of the bytes to zero.
-7. 	int *arr = calloc(10, sizeof(int));
+7. 		int *arr = calloc(10, sizeof(int));
 8. 	// Free the memory block pointed to by ptr.
-9. 	free(ptr);
+9. 		free(ptr);
+10. }
