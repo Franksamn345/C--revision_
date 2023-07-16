@@ -418,4 +418,26 @@ Use: Similar to strcmp, but it compares only the first n characters of the strin
 2. Function that deallocates memory
             /*free*/
 ##### malloc)
-* void* malloc(sizeof(size)); 
+* void* malloc(sizeof(size));
+**Malloc**
+* The `malloc()` function allocates a block of memory of the specified size and returns a pointer to the beginning of the allocated memory. The `malloc()` function takes a single argument, which is the size of the memory block to be allocated, in bytes.
+* If the `malloc()` function succeeds, it returns a pointer to the beginning of the allocated memory. If the `malloc()` function fails, it returns a null pointer.
+##### Realloc
+The `realloc()` function changes the size of a previously allocated memory block. The `realloc()` function takes two arguments, the first argument is a pointer to the previously allocated memory block, and the second argument is the new size of the memory block, in bytes.
+If the `realloc()` function succeeds, it returns a pointer to the beginning of the new memory block. If the `realloc()` function fails, it returns a null pointer.
+##### Calloc
+The `calloc()` function allocates a block of memory and initializes all of the bytes in the block to zero. The `calloc()` function takes two arguments, the first argument is the number of elements to be allocated, and the second argument is the size of each element, in bytes.
+If the `calloc()` function succeeds, it returns a pointer to the beginning of the allocated memory. If the `calloc()` function fails, it returns a null pointer.
+##### Free
+The `free()` function frees a previously allocated memory block. The `free()` function takes a single argument, which is a pointer to the memory block to be freed.
+If the `free()` function succeeds, it does nothing. If the `free()` function fails, it generates a segmentation fault.antation fault or other error message that indicates there was some problem with the operation.
+** Examples **
+1. {
+2. 	// Allocate a block of memory of size 10 bytes.
+3. 	char *ptr = malloc(10);
+4. 	// Change the size of the memory block to 20 bytes.
+5. 	ptr = realloc(ptr, 20);
+6. 	// Allocate a block of memory and initialize all of the bytes to zero.
+7. 	int *arr = calloc(10, sizeof(int));
+8. 	// Free the memory block pointed to by ptr.
+9. 	free(ptr);
