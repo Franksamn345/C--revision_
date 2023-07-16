@@ -131,17 +131,21 @@ i) Example
 ###  <string.h>
 1. strcpy: Copies one string to another.
 
-* { /* char *strcpy(char *dest, const char *src); */}
+ {
+    /* char *strcpy(char *dest, const char *src); */
+ }
 * Use: This function is used to copy the contents of the source string (src) to the destination string (dest).
 
 2. strcat: Concatenates two strings.
 
-* { /* char *strcat(char *dest, const char *src); */ }
+1. {
+2.   /* char *strcat(char *dest, const char *src); */
+3. }
 * Use: It appends the contents of the source string (src) to the destination string (dest), resulting in a single concatenated string.
 
 3. strlen: Calculates the length of a string.
 
-* { /* size_t strlen(const char *str);*/ }
+1. { /* size_t strlen(const char *str);*/ }
 * Use: This function returns the length of the string (str), excluding the null terminator.
 
 4. strcmp: Compares two strings.
