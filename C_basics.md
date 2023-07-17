@@ -440,13 +440,39 @@ If the `calloc()` function succeeds, it returns a pointer to the beginning of th
 The `free()` function frees a previously allocated memory block. The `free()` function takes a single argument, which is a pointer to the memory block to be freed.
 If the `free()` function succeeds, it does nothing. If the `free()` function fails, it generates a segmentation fault.antation fault or other error message that indicates there was some problem with the operation.
 ** Examples **
-1. {
-2. 	// Allocate a block of memory of size 10 bytes.
-3. 		char *ptr = malloc(10);
-4. 	// Change the size of the memory block to 20 bytes.
-5. 		ptr = realloc(ptr, 20);
-6. 	// Allocate a block of memory and initialize all of the bytes to zero.
-7. 		int *arr = calloc(10, sizeof(int));
-8. 	// Free the memory block pointed to by ptr.
-9. 		free(ptr);
-10. }
+1. 	{
+2. 		// Allocate a block of memory of size 10 bytes.
+3. 			char *ptr = malloc(10);
+4. 		// Change the size of the memory block to 20 bytes.
+5. 			ptr = realloc(ptr, 20);
+6. 		// Allocate a block of memory and initialize all of the bytes to zero.
+7. 			int *arr = calloc(10, sizeof(int));
+8. 		// Free the memory block pointed to by ptr.
+9. 			free(ptr);
+10. 	}
+## Difference between Dynamic and Static library
+### Static linking
+* When the code is compiled the call function will take the `object code` plus the `libraries` and the linker will link them together to form an executed `exe` file
+* This is when the call function code is included in the final executed code by the linker
+* The code of the function is included
+#### The problems
+* The size of the `exe` will be increased
+* The `exe` files generated have to be compiled each time an update is made in the functions
+### Dynamic linking
+When the code is compiled the call function will take the `object code` plus the `memory address` of the function and the linker will link them together to form an executed `exe` file
+* This will eventualy resolve the size issue as the libraries will not be included each time it is updated
+* The recompiling problem will have been resolved as each time the function is updated it will be stored in the memory.
+#### Libraries
+##### Static Library
+1. Windows `.lib` (Library)
+2. Linux   `.a`   (Archive)
+##### Dynamic Library
+1. Windows `.dill` (Dynamic Library)
+2. Linux   `.so`   (Shared object)
+## Command Line Arguments
+##### Struct Declaration
+1. 	struct tag_name {
+2.   	type member1;
+3.  	type member2;
+4. 	/* declare as many members as desired, but the entire structure size must be known to the compiler. */
+5. 	};
