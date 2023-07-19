@@ -128,12 +128,12 @@ i) Example
 * They contain prototypes used to call certain functions to be used in a code.
 * The prototypes are the function declarations held by the header file which are introduced to the peice of code by including a "header file"
 * Format for writing a header file:
-	#ifndef MYHEADER_H
-	#define MYHEADER_H
-	// File: main
-	// desc: Header file.
-	`prototypes`
-	#endif /* MYHEADER_H */
+1.	#ifndef MYHEADER_H
+2.	#define MYHEADER_H
+3.	// File: main
+4.	// desc: Header file.
+5.	`prototypes`
+6.	#endif /* MYHEADER_H */
 ## Standard Library Header files
 ###  <string.h>
 1. strcpy: Copies one string to another.
