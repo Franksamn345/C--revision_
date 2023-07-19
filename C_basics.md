@@ -127,6 +127,13 @@ i) Example
 # Header files
 * They contain prototypes used to call certain functions to be used in a code.
 * The prototypes are the function declarations held by the header file which are introduced to the peice of code by including a "header file"
+* Format for writing a header file:
+	#ifndef MYHEADER_H
+	#define MYHEADER_H
+	// File: main
+	// desc: Header file.
+	`prototypes`
+	#endif /* MYHEADER_H */
 ## Standard Library Header files
 ###  <string.h>
 1. strcpy: Copies one string to another.
@@ -347,8 +354,8 @@ Use: Similar to strcmp, but it compares only the first n characters of the strin
 * /* double difftime(time_t time1, time_t time0); */
 * Use: It calculates the difference in seconds between time1 and time0 and returns the result as a double value.
 
-###### These functions are useful for working with date and time values, converting between different representations, formatting time as strings, and calculating time differences. Additionally, <time.h> also provides types like time_t and struct tm to represent time values and date/time components respectively.
-### <fcntl.h> header file in C provides various constants and function prototypes related to file control operations. It is primarily used for low-level file operations and provides functions for opening, manipulating, and controlling file descriptors. Here are some commonly used functions, constants, and macros provided by <fcntl.h>:
+###### These functions are useful for working with date and time values, converting between different representations, formatting time as strings, and calculating time differences. Additionally, `<time.h>` also provides types like time_t and struct tm to represent time values and date/time components respectively.
+### <fcntl.h> header file in C provides various constants and function prototypes related to file control operations. It is primarily used for low-level file operations and provides functions for opening, manipulating, and controlling file descriptors. Here are some commonly used functions, constants, and macros provided by `<fcntl.h>`:
 1. open: Opens a file.
 
 * /* int open(const char *pathname, int flags, mode_t mode); */
@@ -404,6 +411,7 @@ Use: Similar to strcmp, but it compares only the first n characters of the strin
 2. Second declare the prototype mostly at the top of the code after the header files, so that it can be reused in other functions without repeating the declaration
 3. declare a variable in the required function and assign it the function call.. eg. "int x = sum(78, 90);"
 ##### Pointers
+###### We introduce a `pointer` in a function when we want to alter or change the value of a variable `else` we still pass a variable as the argument and thi will prevent the original value of the variable from changing
 * Incremetion when the "++"sign comes before the variable "pre-decrement" then 1 is added to the variable, and the value of the variable is changed. 
 . Example:
 1. {
