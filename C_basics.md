@@ -405,7 +405,26 @@ Use: Similar to strcmp, but it compares only the first n characters of the strin
 4. F_SETFL, F_GETFL: Control and retrieve file status flags.
 
 ###### These functions, constants, and macros provided by <fcntl.h> are useful for performing low-level file operations, such as opening, closing, reading, and writing files, as well as controlling file descriptors and file access modes. It's important to refer to the documentation or appropriate references for a complete list of functions, constants, and their specific uses.
+### The <stdarg.h> header in C provides a set of macros that allow functions to accept a variable number of arguments. These macros are essential for implementing functions like printf() and scanf() which can take a varying number of arguments based on the format string.
+1. va_list: The va_list type is used to declare a variable that will hold the information needed to access the variable arguments. It acts as a handle to the list of arguments.
 
+2. va_start(va_list ap, last_param): This macro initializes the va_list to point to the first variable argument. It takes two arguments: ap, which is the va_list variable declared using va_list, and last_param, which is the last named parameter of the function. The va_start() macro must be called before any other macros from <stdarg.h> can be used.
+
+3. va_arg(va_list ap, type): This macro retrieves the next argument from the va_list and converts it to the specified type. It takes two arguments: ap, which is the va_list, and type, which is the type to which the argument should be converted. The va_arg() macro also advances the va_list to the next argument.
+
+4. va_end(va_list ap): This macro must be called to clean up after using the variable arguments. It takes the va_list as an argument and performs any necessary cleanup.
+* example code:
+1. 	#include <stdarg.h>
+
+3. 	void my_printf(const char* format, ...)
+4.	{
+5. 		va_list args;
+6. 		va_start(args, format);
+
+7. 		// ...
+
+8. 		va_end(args);
+9. 	}
 ##### How to call a function
 1. First define the function and what the code of the function is about
 2. Second declare the prototype mostly at the top of the code after the header files, so that it can be reused in other functions without repeating the declaration
